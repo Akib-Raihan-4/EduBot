@@ -1,0 +1,346 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi there",
+        "How are you",
+        "Is anyone there?",
+        "Hey",
+        "Hola",
+        "Hello",
+        "Good day",
+        "Namaste",
+        "yo"
+      ],
+      "responses": [
+        "Hello",
+        "Good to see you again",
+        "Hi there, how can I help?"
+      ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye",
+        "Get lost",
+        "Till next time",
+        "bbye"
+      ],
+      "responses": [
+        "See you!",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Awesome, thanks",
+        "Thanks for helping me"
+      ],
+      "responses": [
+        "Happy to help!",
+        "Any time!",
+        "My pleasure"
+      ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "noanswer",
+      "patterns": [],
+      "responses": [
+        "Sorry, can't understand you",
+        "Please give me more info",
+        "Not sure I understand"
+      ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "options",
+      "patterns": [
+        "How you could help me?",
+        "What you can do?",
+        "What help you provide?",
+        "How you can be helpful?",
+        "What support is offered"
+      ],
+      "responses": [
+        "I am a general-purpose chatbot. Here are some things I can assist you with:\n\n1. Answering machine learning questions\n2. Providing the current date and time\n3. Setting timers\n\nFeel free to ask any questions or make specific requests!"
+      ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "machinelearning",
+      "patterns": [
+        "What is machine learning?",
+        "How does machine learning work?",
+        "Can you explain machine learning?",
+        "Tell me about machine learning",
+        "Machine learning basics"
+      ],
+      "responses": [
+        "Machine learning is a field of artificial intelligence that focuses on the development of algorithms and models that allow computers to learn from and make predictions or decisions based on data. It involves training a model on a dataset to recognize patterns and make accurate predictions or decisions. The model can then be used to process new data and provide insights or perform specific tasks. Machine learning is widely used in various domains, including image recognition, natural language processing, recommendation systems, and predictive analytics."
+      ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "svm",
+      "patterns": [
+        "What is Support Vector Machine (SVM)?",
+        "Explain SVM",
+        "How does SVM work?",
+        "SVM algorithm"
+      ],
+      "responses": [
+        "Support Vector Machine (SVM) is a supervised machine learning algorithm that is used for classification and regression tasks. It works by finding the optimal hyperplane that separates different classes in the data. SVM aims to maximize the margin between the hyperplane and the nearest data points of each class. It can handle both linear and non-linear classification problems using different kernel functions. SVM is known for its effectiveness in high-dimensional spaces and is widely used in various applications."
+      ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "linearregression",
+      "patterns": [
+        "What is Linear Regression?",
+        "Explain Linear Regression",
+        "How does Linear Regression work?",
+        "Linear Regression algorithm"
+      ],
+      "responses": [
+        "Linear Regression is a supervised machine learning algorithm used for predicting continuous numeric values based on the relationship between input features and a target variable. It assumes a linear relationship between the input features and the target variable and tries to find the best-fitting line that minimizes the difference between the predicted values and the actual values in the training data. Linear Regression is widely used for tasks such as price prediction, demand forecasting, and trend analysis."
+      ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "neuralnetworks",
+      "patterns": [
+        "What are Neural Networks?",
+        "Explain Neural Networks",
+        "How do Neural Networks work?",
+        "Neural Networks algorithm"
+      ],
+      "responses": [
+        "Neural Networks, also known as Artificial Neural Networks (ANN), are a class of machine learning algorithms inspired by the structure and functioning of the human brain. They consist of interconnected nodes called neurons that process and transmit information. Neural Networks can learn and generalize from training data, enabling them to solve complex problems such as image and speech recognition, natural language processing, and pattern recognition. They are composed of input, hidden, and output layers, and the connections between neurons have associated weights that are adjusted during training."
+      ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "decisiontrees",
+      "patterns": [
+        "What are Decision Trees?",
+        "Explain Decision Trees",
+        "How do Decision Trees work?",
+        "Decision Trees algorithm"
+      ],
+      "responses": [
+        "Decision Trees are supervised machine learning models that can be used for both classification and regression tasks. They represent a flowchart-like structure where internal nodes represent features, branches represent decisions, and leaf nodes represent the outcome or prediction. The tree is constructed by recursively splitting the data based on different features and their associated thresholds, aiming to maximize information gain or minimize impurity. Decision Trees are easy to interpret, and they can handle both categorical and numerical data. They are often used in areas such as medical diagnosis, credit scoring, and customer churn prediction."
+      ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "randomforest",
+      "patterns": [
+        "What is Random Forest?",
+        "Explain Random Forest",
+        "How does Random Forest work?",
+        "Random Forest algorithm"
+      ],
+      "responses": [
+        "Random Forest is an ensemble learning method that combines multiple decision trees to create a more powerful model. It works by training a set of decision trees on different subsets of the data and averaging their predictions to make the final prediction. Each tree in the random forest is trained on a random subset of features, providing diversity and reducing overfitting. Random Forest is known for its robustness, scalability, and ability to handle high-dimensional data. It is used for classification, regression, and feature selection tasks in various domains."
+      ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "kmeans",
+      "patterns": [
+        "What is Kmeans Clustering?",
+        "What is K-means Clustering?",
+        "Explain K-means Clustering",
+        "kmeans",
+        "How does K-means Clustering work?",
+        "K-means Clustering algorithm"
+      ],
+      "responses": [
+        "K-means Clustering is an unsupervised machine learning algorithm used for grouping or clustering similar data points together. It aims to partition the data into K clusters, where each data point belongs to the cluster with the nearest mean (centroid). The algorithm iteratively assigns data points to the nearest centroid and updates the centroid based on the newly formed clusters. K-means Clustering is widely used in customer segmentation, image compression, anomaly detection, and recommendation systems."
+      ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "datascience",
+      "patterns": [
+        "What is Data Science?",
+        "Explain Data Science",
+        "How does Data Science work?"
+      ],
+      "responses": [
+        "Data Science is an interdisciplinary field that combines techniques, tools, and methods to extract insights and knowledge from data. It involves collecting, cleaning, analyzing, and interpreting large volumes of structured and unstructured data to uncover patterns, trends, and actionable insights. Data Science incorporates various disciplines such as statistics, machine learning, data visualization, and domain expertise to solve complex problems and make data-driven decisions. It is widely used in areas such as business analytics, healthcare, finance, and social sciences."
+      ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "iubmission",
+      "patterns": [
+        "mission",
+        "goals",
+        "objectives",
+        "strategy",
+        "university mission"
+      ],
+      "responses": [
+        "Our university's mission is to achieve the goals of higher education and sustainable economic growth in the country through a two-way relationship between the community and the university. We aim to produce graduates of international standards within the local environment, equipped with knowledge and relevant skills for leadership in enterprise, public service, and welfare. Additionally, we encourage and support useful research, create knowledge, and provide further learning opportunities for adults. Our curriculum objectives for undergraduate education include teaching communicative skills, strong humanities background, knowledge, and competence in a major subject, and a sub-specialization in a related subject. This aligns with our goal of equipping students with middle management skills and a foundation for higher studies."
+      ]
+    },
+    {
+      "tag": "cseadmissioneligibility",
+      "patterns": [
+        "admission eligibility",
+        "requirements for admission",
+        "eligibility criteria"
+      ],
+      "responses": [
+        "To be eligible for admission, you need to meet certain criteria: Combined GPA of 8.0 in S.S.C and H.S.C with a minimum of 3.5 in each. O'Level in a minimum of 5 subjects with a GPA of 2.50 and A'Level in 2 subjects with a minimum GPA of 2.00. International Baccalaureate or U.S. High School Diploma. Other 12 years equivalent degree (must have the equivalence certificate from the Ministry of Education).Engineering Students must have Math and Physics in their H.S.C. with at least a B grade. Students applying for Microbiology and Biochemistry must have Biology in their SSC or O-Level with at least a B grade. Environmental Science students who have taken Chemistry/Physics in S.S.C. or O'Level will get preference."
+      ]
+    },
+    {
+      "tag": "admissionperiod",
+      "patterns": [
+        "admission period",
+        "when does admission start",
+        "admission timeline"
+      ],
+      "responses": [
+        "There are three academic semesters: Autumn, Spring, and Summer. Autumn: The admission procedure starts within the first week of July and ends with the commencement of classes in the first week of September. Spring: The admission procedure starts within the first week of November and ends with the commencement of classes in the second week of January. Summer: The admission procedure takes place in the second week of March and ends with the commencement of classes in the second week of May."
+      ]
+    },
+    {
+      "tag": "tuitionwaiver",
+      "patterns": [
+        "tuition waiver",
+        "full scholarship",
+        "scholarship criteria"
+      ],
+      "responses": [
+        "Full Tuition waiver is provided to students meeting the following criteria: GPA 5.00 in both SSC and HSC (excluding the 4th subject). 7 A’s in O-level (one sitting) and 3 A’s in A-level. Top 5% scorers in the Admission test will receive a 100% Scholarship."
+      ]
+    },
+    {
+      "tag": "financialassistance",
+      "patterns": [
+        "financial assistance",
+        "discount on tuition",
+        "sibling discount",
+        "campus job for financial assistance"
+      ],
+      "responses": [
+        "We offer various forms of financial assistance: Discount on Tuition fee, based on performance in IUB and financial need. 50% financial discount for concurrently admitted siblings & spouse on entry. Campus job opportunities & other Financial Assistance."
+      ]
+    },
+    {
+      "tag": "tuitionfees",
+      "patterns": [
+        "tuition fees",
+        "cost of education",
+        "fees per credit",
+        "library fees",
+        "laboratory fees",
+        "student activities fees"
+      ],
+      "responses": [
+        "Tuition Fees & Other Charges: Application fee: Tk. 1000. Admission Fees (Once in 4 years): Tk. 25,000. Tuition Fees Per Credit: Tk. 5,500 (Existing students), Tk. 6,000 (For Autumn'17 students and onwards). Library, Laboratory & Student Activities fees: Tk. 6,000 (Existing students), Tk. 7,000 (For Autumn'17 students and onwards). All new female students will get a 10% discount on Tuition Fees per credit hour for both undergraduate and graduate programs."
+      ]
+    },
+    {
+      "tag": "cseacademics",
+      "patterns": [
+        "academics",
+        "academic programs",
+        "courses offered",
+        "departments",
+        "degree programs"
+      ],
+      "responses": [
+        "The CSE department offers a range of academic programs, including both undergraduate (B.Sc.) and graduate (M.Sc.) degrees. The current programs on offer are: B.Sc. in Computer Engineering (CEN). B.Sc. in Computer Science (CSC). B.Sc. in Computer Science & Engineering (CSE). M.Sc. in Computer Science (CSC). M.Sc. in Software Engineering (SEN). M.Sc. in Computer Networks & Communications (CNC).Efforts are also underway to start a postgraduate/doctorate (PhD) program soon."
+      ]
+    },
+    {
+      "tag": "cseresources",
+      "patterns": [
+        "resources",
+        "research facilities",
+        "learning facilities",
+        "labs",
+        "computer laboratories",
+        "software tools"
+      ],
+      "responses": [
+        "Our department provides state-of-the-art research and learning facilities to our students. Here are some of the resources available: Center for Cognitive Skills and Enhancement (CCSE): A research lab developed with the aid of the Bangladesh Government and the University Grants Commission’s (UGC) HEQEP project, housing several high-performance machines, including one 11 teraflop supercomputer. Animation Lab: Equipped with 20 server-grade computers fitted with CUDA-enabled Nvidia graphic cards for animation, visualization, and game development work. Dedicated Research Lab: Equipped with high-performance Mac, Linux, and Windows machines and various devices like Kinect, Google Glass, Leap Motion, Arduino, Raspberry Pi, Emotive EPOC+, Altera DE1, DE2, DE3. General Purpose Computer Laboratories: Five labs containing more than 150 computers for everyday use. Specialized Facilities: Networking lab and Database lab where students receive hands-on learning experiences during their lectures. Licensed Software: All our laboratories use only genuine licensed or open-source software; we do not condone the use of pirated software.Additionally, all IUB students receive a Microsoft Office 365 license free of cost during their study at IUB."
+      ]
+    },
+    {
+      "tag": "cseextracurricularactivities",
+      "patterns": [
+        "extracurricular activities",
+        "cultural activities",
+        "events",
+        "seminars",
+        "lecture series",
+        "workshops"
+      ],
+      "responses": [
+        "Apart from academic pursuits, our department is culturally very active and organizes various extracurricular activities. We collaborate with other IUB departments and student clubs to organize events during Bangla New Year (পহেলা বৈশাখ), Independence Day, International Language Day, Victory Day, etc. These cultural events promote diversity and celebration of various traditions.In addition, our students have the opportunity to attend weekly seminars, lecture series, and workshops conducted by industry and academic leaders from around the world. These engagements keep our students engaged and stimulated, exposing them to the latest developments in their fields."
+      ]
+    },
+    {
+      "tag": "graduateprograms",
+      "patterns": [
+        "graduate programs",
+        "postgraduate programs",
+        "M.Sc.",
+        "Master's",
+        "MA",
+        "MSS",
+        "MPH",
+        "School of Business and Entrepreneurship",
+        "School of Engineering, Technology and Science",
+        "School of Environment and Life Sciences",
+        "School of Liberal Arts & Social Sciences",
+        "School of Pharmacy and Public Health"
+      ],
+      "responses": [
+        "We offer a diverse range of graduate programs across different schools. Here are the graduate programs currently available:School of Business and Entrepreneurship: Master of Business Administration (MBA), Executive Master of Business Administration (EMBA) M.Sc in Economics. School of Engineering, Technology and Science: M.Sc. in Computer Science, M.Sc. in Computer Networks & Communications, M.Sc. in Software Engineering, M.Sc. in Electrical & Electronic Engineering. School of Environment and Life Sciences: Master of Science in Environment Management, Master of Science in Climate Change and Development, Master’s in Biotechnology & Bioinformatics. School of Liberal Arts & Social Sciences: MA in English Literature, MA in Applied Linguistics and ELT, MSS in Development Studies, MSS in Media & Communication. School of Pharmacy and Public Health: Master of Public Health (MPH)"
+      ]
+    },
+    {
+      "tag": "datetime",
+      "patterns": [
+        "What is the time",
+        "what is the date",
+        "date",
+        "time",
+        "tell me the date",
+        "day",
+        "what day is is today"
+      ],
+      "responses": [ "The current date and time are {datetime}." ]
+    },
+    {
+      "tag": "iubclubs",
+      "patterns": [
+        "clubs of IUB",
+        "student clubs",
+        "IUB clubs",
+        "club list",
+        "club names"
+      ],
+      "responses": [
+        "Independent University, Bangladesh (IUB) has a vibrant campus life with numerous student clubs catering to diverse interests. Here are some of the clubs at IUB: IUB Football Club. IUB Cricket Club. IUB Table Tennis Club.  IUB Chess Club. IUB Volleyball Club. IUB Basketball Club. IUB Badminton Club. IUB Carrom Club. IUB Billiard Club. IUB Cycling Club. IUB Anthropology Club. IUB Art Club. IUB Dance Club. IUB English Language Club. IUB Global Gatekeepers Club. IUB Film Club. IUB Debate Club. IUB Journalism Club. IUB K-Club. IUB Moot Court Society. Law Students’ Society, IUB. IUB Music Club. IUB Photography Club. IUB Sociology Club. IUB Theatre. Independent Accounting Association. Independent Beta Elites. Independent Economic Society. Independent HR Society. Independent International Business Forum. Independent Managerial Society. Independent Marketers’ Association. Independent Student's Entrepreneurship Club. Independent University Social Welfare Club. IUB E-Business Club. The Environment Club. Green Planet Club. Life Sciences Club. River Conservation Club, IUB. IUB ACM Student Chapter. IEEE Computer Society, IUB. IEEE IUB Student Branch. Jukti - The IUB CSE Club. IUB Pharma Club. IUB Public Health Club. IUB Toastmasters Club. DEA Club."
+      ]
+    }
+  ]
+}
