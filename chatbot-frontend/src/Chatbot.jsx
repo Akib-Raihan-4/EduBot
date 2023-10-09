@@ -14,38 +14,35 @@ const Chatbot = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     if (!input) return;
+
     setMessages((prevMessages) => [
       ...prevMessages,
-      { text: input, type: "user" }
+      { text: input, type: "user" },
     ]);
     setInput("");
 
-    const query = input.replace(/\s+/g, "+");
+    const query = encodeURIComponent(input); // Encode the input for the URL
     try {
       const response = await fetch(`http://127.0.0.1:5000/query/${query}`);
+      console.log(response)
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+
       const data = await response.json();
-      const message = await data.top.res;
-      console.log({ message });
-    // Check if the response contains date or time-related keywords
-    if (
-      message.toLowerCase().includes("date") ||
-      message.toLowerCase().includes("time")
-    ) {
-      const currentDateTime = new Date().toLocaleString();
-      setMessages((prevMessages) => [
-        ...prevMessages,
-        { text: message.replace("{datetime}", currentDateTime), type: "bot" }
-      ]);
-    } else {
-      setMessages((prevMessages) => [
-        ...prevMessages,
-        { text: message, type: "bot" }
-      ]);
+      const message = data?.top?.res;
+
+      if (message) {
+        const currentDateTime = new Date().toLocaleString();
+        setMessages((prevMessages) => [
+          ...prevMessages,
+          { text: message.replace("{datetime}", currentDateTime), type: "bot" },
+        ]);
+      }
+    } catch (err) {
+      console.error("Error:", err);
     }
-  } catch (err) {
-    console.log("error ", err);
-  }
-};
+  };
 
   return (
     <div style={{ height: "100%", display: "flex", flexDirection: "column" }}>
@@ -87,7 +84,7 @@ const Chatbot = () => {
             border: "none",
             borderRadius: "5px",
             marginRight: "10px",
-            boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)"
+            boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
           }}
           placeholder="Type your message..."
         />
@@ -100,7 +97,7 @@ const Chatbot = () => {
             borderRadius: "5px",
             padding: "10px",
             cursor: "pointer",
-            boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)"
+            boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
           }}
         >
           Send
